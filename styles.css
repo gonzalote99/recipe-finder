@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;600;700&display=swap');
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+body {
+  background-color: aliceblue;
+}
+body .mealSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .mealSection article {
+  padding: 2rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+body .mealSection article header h1 {
+  font-size: 40px;
+}
+body .mealSection .formCont {
+  /* background-color: #2112; */
+  width: 80%;
+  max-width: 450px;
+}
+
+body .mealSection .formCont form {
+  display: grid;
+  grid-template-columns: 7% auto 20%;
+  align-items: center;
+  border: 1px solid #ced4da;
+  color: #212529;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+body .mealSection .formCont form input {
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-block-start: 0;
+  padding-inline-start: 2px;
+}
+
+body .mealSection .formCont form .icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+body .mealSection .formCont form .icon ion-icon {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #afbd6a;
+}
+
+body .mealSection .formCont form button {
+  height: calc(100% + 1px);
+  background-color: #0a53be;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+body .mealSection .searchText {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+body .mealSection .searchText h2 {
+  font-size: 1rem;
+  color: #5d6063;
+}
+
+body .mealSection .mealsCont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  width: 100%;
+  grid-gap: 1rem;
+  max-width: 1100px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+body .mealSection .mealsCont .meal {
+  width: 18rem;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  margin: 0% auto;
+  position: relative;
+ 
+}
